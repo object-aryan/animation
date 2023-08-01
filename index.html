@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animationkigyan2</title>
+    <style>
+       *{
+        margin: 0%;
+        padding:0%;
+        box-sizing: border-box;
+       }
+       .container
+       {
+        border: solid 2px black;
+        background-color: bisque;
+        width: 100vw;
+        height: 100vh;
+
+    }
+    .topmovement
+    {
+        border: 2px solid rgb(0, 139, 139);
+        box-shadow:3px 10px 4px black;
+        border-radius: 20px;
+        margin-top:20px;
+        margin-left:5px;
+        width: 260px;
+        height: 6%;
+        background-color:rgb(0, 139, 139);
+        position: relative;
+        animation:topmovement 10s ease 3s infinite alternate both;
+        
+    }
+    @keyframes topmovement{
+        from
+        {
+            top:0;
+            left: 0;
+
+        }
+        to
+        {
+            top:0;
+            left:1750px;
+        }
+    }
+    .bottommovement
+    {
+        border: 2px solid darkcyan;
+        box-shadow:3px 10px 4px black;
+        border-radius: 20px;
+        margin-top:20px;
+        margin-left:5px;
+        width: 260px;
+        height: 6%;
+        background-color:rgb(0, 139, 139);
+        position: relative;
+        animation:bottommovement 10s ease-out 3s infinite alternate both ;
+    }
+    @keyframes  bottommovement{
+        from
+        {
+            top:65%;
+            left:1750px;
+
+        }
+        to
+        {
+            top:65%;
+            left:0;
+        }
+    }
+    .circlemovement
+    {
+        border: 2px solid rgb(0, 139, 139);
+        box-shadow:10px 30px 4px black;
+        border-radius:75px;
+        margin-top:20px;
+        margin-left:5px;
+        width: 150px;
+        top:30%;
+        left:45%;
+        height:15%;
+        background-color:rgb(0, 139, 139);
+        position: relative;
+        animation:circlemovement 10s ease 3s infinite alternate-reverse ;
+    }
+    @keyframes circlemovement {
+     0%
+     {
+        top:1%;
+        left:1%;
+
+     }
+     30%
+     {
+       top:10%;
+       left:90%;
+      }
+     60% 
+     {
+        top: 50%;
+        left:1%;
+     } 
+     80%
+     {
+        top:65%;
+        left:90%;
+     }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topmovement">
+
+        </div>
+        <div class="circlemovement">
+
+        </div>
+        <div class="bottommovement">
+
+        </div>
+    </div>
+</body>
+</html>
